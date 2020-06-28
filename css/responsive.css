@@ -1,0 +1,208 @@
+/*=======================================
+                  Bootstrap 3 Media Queries
+=========================================*/
+/* Large devices (Desktops and Laptops) */
+@media (min-width: 1200px) {
+    /* OK */
+}
+
+/* Medium devices (landscape tablets and medium desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* problem with navigation jumping to next line */
+    /* Mobile menu */
+    .navbar {
+        background-color: rgba(0, 0, 0, .7);
+        padding: 0;
+    }
+
+    ul.navbar-nav {
+        float: left;
+        /* in my style.css file i had used more specific selector, so that got precedence initially, so its important to ensure to override any style, same selector are used in responsive */
+    }
+
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+
+}
+
+/* small devices (Portrait tablets and small desktops)*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* mobile menu */
+    .navbar {
+        background-color: rgba(0, 0, 0, .7);
+        padding: 0;
+    }
+
+    ul.navbar-nav {
+        float: left;
+        /* in my style.css file i had used more specific selector, so that got precedence initially, so its important to ensure to override any style, same selector are used in responsive */
+    }
+
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+
+    /* About - remove diagonal border */
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    #about-content-box {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* work section */
+    /* first col-sm adjusted */
+
+    /* Stats section */
+    /* first columns adjusted */
+    /* next remove whitespace extra */
+    .stats-item {
+        padding: 20px 0;
+    }
+
+    /* Clients section */
+    /* adjust the carousel slider */
+    /* reduce the number of clients and increase the client size */
+    /* own carousel options for responsive layout and adjust in JS for it in custom.js */
+
+    /* footer */
+    /* need to adjust for copyright section */
+    /* using bootstrap class hidden .hidden-sm for hiding on small screens */
+    /* center the copyright text */
+    #footer-copyrights {
+        text-align: center;
+    }
+
+}
+
+/* Extra small devices, landscape phone and portrait laptops */
+/* can be further broken down into 480px and 320px */
+@media (max-width: 767px) {
+
+    /* mobile menu */
+    .navbar {
+        background-color: rgba(0, 0, 0, .7);
+        padding: 0;
+    }
+
+    ul.navbar-nav {
+        float: left;
+        /* in my style.css file i had used more specific selector, so that got precedence initially, so its important to ensure to override any style, same selector are used in responsive */
+    }
+
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+
+    /* Home */
+    #home-heading h3 {
+        font-size: 24px;
+    }
+
+    /* Buttons */
+    .btn-general {
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+    }
+
+    /* About */
+    /* remove diagonal as above */
+    /* About - remove diagonal border */
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    #about-content-box {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* Work */
+    /* tooo much white space on the right side of images */
+    .img-wrapper img {
+        min-width: 100%;
+    }
+
+    /* Team */
+    /* resposnive carousel */
+
+    /* Testimonials */
+    /* block quote */
+    .testimonial blockquote {
+        padding: 6px 50px;
+    }
+
+    .testimonial blockquote::before {
+        left: 10px;
+    }
+
+    .testimonial blockquote::after {
+        right: 10px;
+    }
+
+    .testimonial blockquote p {
+        font-size: 14px;
+    }
+
+    /* Stats */
+    /* remove extra white spaces */
+    .stats-item {
+        padding: 20px 0;
+    }
+
+    /* Footer menu */
+    /* hide the footer nav */
+    /* hidden-xs */
+    #footer-copyrights {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* Ok */
+    /* in my case, still some issue around 323px */
+}
+
+@media (max-width: 320px) {
+    /* icon size of services section */
+    /* Services */
+    .service-item-icon i {
+        width: 58px;
+        height: 58px;
+        padding: 7px;
+    }
+    .service-item-title h3 {
+        font-size: 17px;
+    }
+    #about-content-box {
+        margin-top: 40px;
+    }
+    /* Testimonial */
+    /* Testimonials */
+    /* block quote */
+    .testimonial blockquote {
+        padding: 6px 30px;
+    }
+    .testimonial blockquote::before {
+        left: 7px;
+    }
+    .testimonial blockquote::after {
+        right: 7px;
+    }
+    .testimonial img {
+        max-width: 80px;
+    }
+
+}
